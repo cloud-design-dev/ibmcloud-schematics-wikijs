@@ -25,7 +25,7 @@ variable "flavor" {
 variable "domain" {
   description = "Domain for compute instance."
   type        = string
-  default     = "cdetesting.com"
+  default     = ""
 }
 
 variable "datacenter" {
