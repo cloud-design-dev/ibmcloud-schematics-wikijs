@@ -1,13 +1,13 @@
 variable "iaas_classic_username" {
-  decription = "IBM Cloud IaaS Username."
-  type       = string
-  default    = ""
+  description = "IBM Cloud IaaS Username."
+  type        = string
+  default     = ""
 }
 
 variable "iaas_classic_api_key" {
-  decription = "IBM Cloud IaaS User API key."
-  type       = string
-  default    = ""
+  description = "IBM Cloud IaaS User API key."
+  type        = string
+  default     = ""
 }
 
 variable "os_image" {
@@ -23,24 +23,25 @@ variable "flavor" {
 }
 
 variable "domain" {
-  type    = string
-  default = "cdetesting.com"
+  description = "Domain for compute instance."
+  type        = string
+  default     = "cdetesting.com"
 }
 
 variable "datacenter" {
-  decription = "Datacenter where instance will be deployed."
-  type       = string
-  default    = ""
+  description = "Datacenter where instance will be deployed."
+  type        = string
+  default     = ""
 }
 
 variable "ssh_key" {
-  decription = "Classic IaaS ssh key to add to compute instance."
-  type       = string
-  default    = ""
+  description = "Classic IaaS ssh key to add to compute instance."
+  type        = string
+  default     = ""
 }
 
 variable "hostname" {
-  decription = "Hostname for instance."
-  type       = string
-  default    = ""
+  description = "Hostname for instance."
+  type        = string
+  default     = ""
 }
