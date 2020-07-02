@@ -7,7 +7,7 @@ resource "ibm_compute_vm_instance" "node" {
   hourly_billing       = true
   private_network_only = false
   local_disk           = true
-  user_metadata        = data.template_file.installer.rendered
+  user_metadata        = templatefile("${path.module}/installer.sh", { email = var.email, fqdn = "${var.hostname}.${var.domain}" })
   flavor_key_name      = var.flavor
   tags                 = [var.datacenter]
   ssh_key_ids          = [data.ibm_compute_ssh_key.deploymentKey.id]
