@@ -45,3 +45,9 @@ variable "hostname" {
   type        = string
   default     = ""
 }
+
+variable "email" {
+  description = "Email used for Lets Encrypt certificate renewal notice."
+  type        = string
+  default     = ""
+}
