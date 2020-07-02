@@ -1,0 +1,46 @@
+variable "iaas_classic_username" {
+  decription = "IBM Cloud IaaS Username."
+  type       = string
+  default    = ""
+}
+
+variable "iaas_classic_api_key" {
+  decription = "IBM Cloud IaaS User API key."
+  type       = string
+  default    = ""
+}
+
+variable "os_image" {
+  description = "Default operating system image for compute instance."
+  type        = string
+  default     = "UBUNTU_18_64"
+}
+
+variable "flavor" {
+  description = "Default instance size."
+  type        = string
+  default     = "BL2_2X4X100"
+}
+
+variable "domain" {
+  type    = string
+  default = "cdetesting.com"
+}
+
+variable "datacenter" {
+  decription = "Datacenter where instance will be deployed."
+  type       = string
+  default    = ""
+}
+
+variable "ssh_key" {
+  decription = "Classic IaaS ssh key to add to compute instance."
+  type       = string
+  default    = ""
+}
+
+variable "hostname" {
+  decription = "Hostname for instance."
+  type       = string
+  default    = ""
+}
